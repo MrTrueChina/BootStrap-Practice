@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>来自菜鸟教程 Bootstrap 简介 实例1</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<!-- 引入JQuery -->
+		<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+		<!-- 引入Bootstrap -->
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<!-- container：n.容器；似乎是一个bootstrap定义的class，效果似乎是对内部元素提供bootstrap的支持 -->
+		<div class="container">
+			<!--jumbotron：超大屏幕；效果上是一个圆角矩形的灰底框，有很大的外边距-->
+			<div class="jumbotron">
+				<h1>jumbotron</h1>
+				<p>在container内部时呈现灰色圆角矩形底、具有很大外间距的效果</p>
+			</div>
+			<!-- row：行，列；似乎和container一样是为内部元素提供支持的class -->
+			<div class="row">
+				<!-- col-sm-4：在container和row内部的效果似乎是距离左边有一定距离 -->
+				<div class="col-sm-4">
+					<h3>col-sm-4</h3>
+					<p>在row内部呈现距左侧有一点距离的效果</p>
+				</div>
+				<div class="col-sm-4" style="background-color: lightgray;">
+					<h3>col-sm-4</h3>
+					<p>背景色显示这个标签还是方形的，并且达到了两边</p>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<h3>col-sm-4</h3>
+				<p>不在row内部但在container时效果更加靠右</p>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<h3>col-sm-4</h3>
+			<p>不在container和row内部时，效果和同时处于两个标签内部差不多，这就有些意思了</p>
+		</div>
+	</body>
+</html>
