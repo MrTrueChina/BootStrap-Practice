@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Bootstrap 实例 - 偏移列</title>
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+
+		<div class="container">
+
+			<h1>col-xx-offset-n</h1>
+
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3" style="background-color: aliceblue">
+					<p>这个div有6列宽度，用 col-md-offset-3 向右偏移了3列，最终位于4-9列</p>
+					<p>偏移的原理是在前面补上没有视觉效果的特殊列，也就是说要占用前面的列</p>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>
