@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Bootstrap 实例 - 嵌套列</title>
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+
+		<div class="container">
+
+			<h1>嵌套列</h1>
+
+			<div class="row">
+				<div class="col-md-4" style="background-color: #F7F7FF">
+					<p>列之间可以嵌套</p>
+					<p>方法很简单，在列（col）内部再写 row 和 col 即可</p>
+				</div>
+
+				<div class="col-md-8" style="background-color: #EEEEFF;">
+					<p>这一列有8个宽度，但这一列的嵌套列总宽度依然是12</p>
+					<p>这12个列是把这一列的8个列的宽度分为12等份得来的</p>
+					
+					<div class="row">
+						<div class="col-md-4" style="background-color: #E0E0FF;">
+							<p>这一列是4列的宽度，换算过来就是</p>
+							<p>8/12*4=2.666…宽度</p>
+						</div>
+						<div class="col-md-6" style="background-color: #D5D5FF;">
+							<p>这一列宽度6，换算后是4</p>
+							
+							<div class="row">
+								<div class="col-md-8" style="background-color: #CACAFF;">
+									<p>可以一直嵌套下去</p>
+									<p>嵌套很多层</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</body>
+</html>

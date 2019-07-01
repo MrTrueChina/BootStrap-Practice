@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Bootstrap 实例 - 列排序</title>
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+
+		<div class="container">
+
+			<h1>col-xx-push-n / col-xx-pull-n</h1>
+
+			<div class="row">
+				<p>默认情况</p>
+				<div class="col-md-4" style="background-color: lavender">
+					<p>这个div写在前面，默认情况下在左边显示</p>
+				</div>
+				<div class="col-md-8" style="background-color: lavenderblush">
+					<p>这个div写在后面，默认情况下在右边显示</p>
+				</div>
+			</div>
+			<br/>
+			<div class="row">
+				<p>使用 push / pull</p>
+				<div class="col-md-4 col-md-push-8" style="background-color: lavender">
+					<p>这个div写在前面，但加了 col-md-push-8，被向右推了8列，到了后面</p>
+				</div>
+				<div class="col-md-8 col-md-pull-4" style="background-color: lavenderblush">
+					<p>这个div写在后面，但加了 col-md-pull-4，被向左拉了4列，到了前面</p>
+				</div>
+			</div>
+			<br />
+			<div class="row">
+				<div class="col-md-6 col-md-push-2" style="background-color: lavender;">
+					<p>push/pull不会像offset一样占用前面的列，但他有可能导致div之间发生遮挡</p>
+				</div>
+				<div class="col-md-6 col-md-pull-2" style="background-color: lavenderblush;">
+					<p>push/pull不会像offset一样占用前面的列，但他有可能导致div之间发生遮挡</p>
+				</div>
+			</div>
+
+		</div>
+
+	</body>
+</html>
