@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Bootstrap 实例 - 堆叠的水平</title>
+		<link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://cdn.staticfile.org/jquery/2.0.0/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+
+		<div class="container">
+			<h1>class="col-xx-n"</h1>
+
+			<div class="row">
+				<div class="col-md-6" style="background-color: aliceblue">
+					<p>class="col-md-6"</p>
+					<p>在中型设备上，这个div占6个列的宽度</p>
+					<p>col：设置宽度</p>
+					<p>md：中型设备</p>
+					<p>6：6个列的宽度</p>
+				</div>
+
+				<div class="col-md-6" style="background-color: lavenderblush">
+					<p>
+						中型设备：bootstrap3 将设备分为4种：<br />
+						<br />
+						超小设备(xs)：宽度小于768像素<br />
+						小型设备(sm)：宽度大于等于768像素，小于992像素<br />
+						中型设备(md)：宽度大于等于992像素，小于1200像素<br />
+						大型设备(lg)：宽度大于1200像素<br />
+						<br />
+						宽度不是设备显示屏的宽度，而是浏览器宽度<br />
+						比如在一个1920像素宽的屏幕上，浏览器是窗口化的，浏览器窗口宽度只有950像素，那么这个网页就按照小型设备处理
+					</p>
+					<br />
+					<p>
+						6个列的宽度：bootstrap3 将父元素的宽度竖着分为12等份，一份为一列，一列为一列宽度<br />
+						如果父元素是1200像素宽的body，那就分成每份100像素宽的12份<br />
+						如果父元素是一个只有120像素宽的div，那就是分成每份10像素的12份
+					</p>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>
