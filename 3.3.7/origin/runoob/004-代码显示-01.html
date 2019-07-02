@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>显示代码</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script src="js/jQuery3.4.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</head>
+	<body>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-push-2" style="background-color: lavender;">
+					<h1>code / pre</h1>
+
+					<p>code标签：将代码作为内联元素显示在网页上</p>
+					<p>像这样 -- <code>system.out.println("Hello World!")</code> -- 像这样</p>
+					<p>pre标签：将代码作为单独的块元素显示在网页上</p>
+					<pre>
+foreach(GameObject gameObject in GameObjects)
+	gameObject.Update();
+							</pre>
+					<p>pre标签有个很不好的特性：不会自动清除多余的缩进，必须在HTML里顶格写</p>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>

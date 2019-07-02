@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>垂直表单</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+	</head>
+	<body style="background-color: aliceblue;">
+
+		<div class="container">
+			<div class="col-md-8 col-md-push-2" style=" background-color: lavender; padding: 1em;">
+
+				<h2>表单</h2>
+
+				<!-- role属性：增强语义，用于表示这个标签到底是什么标签，有些自定义标签在HTML里语意模糊，需要加这个属性来精确指定语义 -->
+				<!-- 在这里加不加效果上看不出差别，不过from就一个，加了也就加了 -->
+				<form role="form">
+					<!-- from-group类：bootstrap的用来包裹一个input块的类 -->
+					<div class="form-group">
+						<!-- for属性：表示关联关系的属性，参数是进行关联的标签的id -->
+						<label for="name">名称</label>
+						<!-- form-control类：bootstrap提供的美化表单的类 -->
+						<!-- 用在文本输入（input type="text"）上的效果是另起一行、全长度、放大输入区域、获得焦点时加外发光等一系列效果 -->
+						<input type="text" class="form-control" id="name" placeholder="请输入名称">
+					</div>
+					<div class="form-group">
+						<label for="inputfile">文件输入</label>
+						<input type="file" id="inputfile">
+						<!-- help-block类：块级帮助文本类，效果似乎只是成块显示、加了边距、减淡颜色 -->
+						<p class="help-block">这里是块级帮助文本的实例。</p>
+					</div>
+					<!-- checkbox类：用于包裹复选框的类，源码里写的清楚明白，这个类在内部有label的情况下会调整label的样式-->
+					<!-- 调整后的效果是如果label里有复选框和文本，会把这两个元素对其，看起来很好看 -->
+					<!-- 但这个类如果不加 label 直接包了复选框，将会向左移动20像素的距离，也就是说复选框+文字的效果一定要加label -->
+					<div class="checkbox">
+						<!-- label内部的复选框似乎会将整个label视为有效点击区域 -->
+						<label>
+							<input type="checkbox"> 请打勾
+						</label>
+					</div>
+					<!-- btn类：提供圆角矩形的按钮效果 -->
+					<!-- btn-default类：提供白色按钮效果 -->
+					<button type="submit" class="btn btn-default">提交</button>
+				</form>
+			</div>
+		</div>
+
+	</body>
+</html>
