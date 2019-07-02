@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>table-hover</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+	</head>
+	<body style="background-color: aliceblue;">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-push-2" style="background-color: white;">
+
+					<h1>table-hover</h1>
+
+					<p>table-hover 类：加在 table 里，给 tbody 里的 td 添加鼠标悬停时颜色加深的效果</p>
+					<p>hover：悬停</p>
+
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>table</th>
+								<th>table-hover</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>table</td>
+								<td>table-hover</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>table</td>
+								<td>table-hover</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>table</td>
+								<td>table-hover</td>
+							</tr>
+						</tbody>
+					</table>
+					<br />
+					<p>如果同时使用了条纹（striped）和悬停（hover），那么鼠标指向颜色较深的行时会显示更深的颜色</p>
+					<table class="table table-hover table-striped">
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>table</th>
+								<th>table-hover</th>
+								<th>table-striped</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>table</td>
+								<td>table-hover</td>
+								<td>table-striped</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>table</td>
+								<td>table-hover</td>
+								<td>table-striped</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>table</td>
+								<td>table-hover</td>
+								<td>table-striped</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

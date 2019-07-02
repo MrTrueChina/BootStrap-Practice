@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>table-bordered</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+	</head>
+	<body style="background-color: aliceblue;">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-push-2" style="background-color: white;">
+
+					<h1>table-bordered</h1>
+
+					<p>table-bordered 类：加在 table 里，将会给整个表格所有单元格增加边框，thead 添加的底部粗线条会保留</p>
+					<p>bordered：有边框的</p>
+
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>table</th>
+								<th>table-bordered</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>table</td>
+								<td>table-bordered</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>table</td>
+								<td>table-bordered</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>table</td>
+								<td>table-bordered</td>
+							</tr>
+						</tbody>
+					</table>
+					<br />
+					<p>不同的样式可以一起使用，比如 table-stried + table-bordered = 有边框的条纹表格</p>
+					<table class="table table-bordered table-striped">
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>table</th>
+								<th>table-bordered</th>
+								<th>table-striped</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>table</td>
+								<td>table-bordered</td>
+								<td>table-striped</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>table</td>
+								<td>table-bordered</td>
+								<td>table-striped</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>table</td>
+								<td>table-bordered</td>
+								<td>table-striped</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
