@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Bootstrap 实例 - 表单控件状态</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+	</head>
+	<body style="background-color: aliceblue;">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-10 col-sm-offset-1" style="background-color: lavender; padding: 1em;">
+
+					<h1>表单控件的状态</h1>
+
+					<form class="form-horizontal" role="form">
+						<div class="form-group">
+							<label class="control-label col-sm-2">可用/获得焦点</label>
+							<div class="col-sm-10">
+								<input class="form-control" type="text" placeholder="默认类型" />
+							</div>
+						</div>
+						<p>默认状态下输入框是可用的，点击后获得焦点，显示发光效果（然而这个效果在css里叫“shadow”，影子）</p>
+
+						<br />
+
+						<div class="form-group">
+							<label class="control-label col-sm-2">禁用</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" disabled="disabled" placeholder="disabled=&quot;disabled&quot;" />
+							</div>
+						</div>
+						<p>添加 disabled=&quot;disabled&quot; 属性可以禁用控件</p>
+
+						<br />
+
+						<fieldset disabled="disabled">
+							<div class="form-group">
+								<label class="control-label col-sm-2">通过fieldset禁用</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" placeholder="&lt;fieldset disabled=&quot;disabled&quot;&gt;" />
+								</div>
+							</div>
+							<p>通过用 &lt;fieldset disabled=&quot;disabled&quot;&gt; 标签包围表单控件，可以一次禁用多个控件</p>
+							
+							<br />
+							
+							<div class="form-group">
+								<label class="control-label col-sm-2">禁用下拉选择菜单</label>
+								<div class="col-sm-10">
+									<select class="form-control">
+										<option>选项1</option>
+									</select>
+								</div>
+							</div>
+							<p>不仅是 input 标签，其他表单控件都是可以禁用的</p>
+							<p>这个 select 和前面的文本框是通过同一个 fieldset 禁用的</p>
+						</fieldset>
+						
+						<br />
+						
+						<div class="form-group has-success">
+							<label class="control-label col-sm-2">成功</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" placeholder="has-success" />
+							</div>
+						</div>
+						<p>使用 has-success 类可以定义“成功”的输入控件，成功可以是指符合标准或其他的一些事情，当然随便用也可以</p>
+						<p>视觉效果是文字变绿色、输入控件整体颜色都变成绿色</p>
+						
+						<br />
+						
+						<div class="form-group has-warning">
+							<label class="control-label col-sm-2">警告</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" placeholder="has-warning" />
+							</div>
+						</div>
+						<p>使用 has-warning 类可以定义“警告”的输入控件，像成功一样，可以表示有意义的信息，也可以随便用，甚至用作装饰</p>
+						<p>视觉效果是文字和控件的整体颜色变成黄色</p>
+						
+						<br />
+						
+						<div class="form-group has-error">
+							<label class="control-label col-sm-2">错误</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" placeholder="has-error" />
+							</div>
+						</div>
+						<p>使用 has-error 类可以定义“错误”的输入控件，可以表示有意义的信息，也可以随便用，甚至用作装饰</p>
+						<p>视觉效果是文字和控件的整体颜色变成红色</p>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>input</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+	</head>
+	<body style="background-color: aliceblue;">
+		<div class="container">
+			<div class="col-md-8 col-md-push-2" style="background-color: lavender; padding: 1em;">
+
+				<h1>input</h1>
+
+				<form role="form">
+
+					<div class="form-group">
+						<label class="control-label" for="textinput">文本输入框</label>
+						<input type="text" placeholder="type=text" class="form-control" id="textinput" />
+					</div>
+					<p>input type="text"：文本输入框</p>
+					<p>placeholder -> place holder -> 占位符</p>
+					<p>class="form-control"：bootstrap的美化输入标签的类</p>
+
+					<br />
+
+					<div class="form-group">
+						<label class="control-label" for="passwordinput">密码输入框</label>
+						<input type="password" placeholder="type=password" class="form-control" id="passwordinput" />
+					</div>
+					<p>input type="password"：密码输入框，输入字符显示为黑点</p>
+
+					<br />
+
+					<div class="form-group">
+						<label class="control-label" for="datetimeinput">日期输入框</label>
+						<input type="datetime" placeholder="type=datetime" class="form-control" id="datetimeinput" />
+					</div>
+					<p>type="datetime"：日期输入框</p>
+
+					<br />
+
+					<div class="form-group">
+						<label class="control-label" for="fileinput">文件选择按钮</label>
+						<input type="file" id="fileinput" />
+					</div>
+					<p>input type="file"：文件选择按钮，这个标签不能加 form-control 类，不然会出现多余的输入框</p>
+
+					<br />
+
+					<div class="form-group">
+						<label class="control-label" for="colorinput">颜色选择按钮</label>
+						<input type="color" class="form-control" id="colorinput" />
+					</div>
+					<p>input type="color"：颜色选择按钮</p>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

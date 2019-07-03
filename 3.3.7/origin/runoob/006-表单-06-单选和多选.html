@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>radio / checkbox</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+	</head>
+	<body style="background-color: aliceblue;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-push-2" style="background-color: lavender; padding: 1em;">
+
+					<h1>textarea</h1>
+
+					<form class="form" role="form">
+						<div class="form-group">
+							<div class="radio">
+								<label>
+									<input type="radio" name="radio" value="a" checked="checked" />选A
+								</label>
+							</div>
+							<div class="radio">
+								<label>
+									<input type="radio" name="radio" value="b" />选B
+								</label>
+							</div>
+						</div>
+						<p>input type="radio"：单选按钮</p>
+						<p>radio类：bootstrap的单选按钮的美化类，使用时加在div上，之后在div里面加一个label，最后写单选按钮</p>
+						<p>radio类会自动对齐文字和按钮，但这个功能只有在 label 的包裹中才有效，否则是完全不同的处理方式</p>
+						<p>name=""：设定名字，同样名字的单选按钮视为一组，选择一个其他的自动取消</p>
+
+						<br />
+
+						<div class="form-group">
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" name="checkbox" value="1" /> 选取1
+								</label>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" name="checkbox" value="2" /> 选取2
+								</label>
+							</div>
+						</div>
+						<p>input type="checkbox"：复选框</p>
+						<p>checkbox类：bootstrap提供的复选框的美化类，使用时也是写在div里，套一个label，最后写复选框</p>
+						<p>name=""：设定名字，同样名字的复选框视为一组，不过这次不会选一个自动取消别的</p>
+
+						<br />
+
+						<div class="form-group">
+							<label class="radio-inline">
+								<input type="radio" name="radioinline" value="a" checked="checked" />选A
+							</label>
+							<label class="radio-inline">
+								<input type="radio" name="radioinline" value="b" />选B
+							</label>
+						</div>
+						<p>radio-inline类：bootstrap提供的用来定义内联单选按钮的类，这个类修饰的radio标签不会换行</p>
+						<p>使用这个类的时候直接写在label上，然后里面写radio就可以正常生效</p>
+
+						<br />
+
+						<div class="form-group">
+							<label class="checkbox-inline">
+								<input type="checkbox" name="inlinecheckbox" value="1" /> 选取1
+							</label>
+							<label class="checkbox-inline">
+								<input type="checkbox" name="inlinecheckbox" value="2" /> 选取2
+							</label>
+						</div>
+						<p>checkbox-inline类：botstrap提供的用来定义内联复选框的类，这个类修饰的checkbox不会换行</p>
+						<p>使用这个类时同样直接写在label上</p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>

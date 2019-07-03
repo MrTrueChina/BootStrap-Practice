@@ -9,12 +9,16 @@
 
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8 col-md-push-2" style="background-color: lavender;">
+				<div class="col-sm-8 col-sm-push-2 col-md-8 col-md-push-2" style="background-color: lavender; padding: 1em;">
 
 					<h2>form-horizontal</h2>
 
+					<!-- form-horizontal类：这个类用于定义水平表单，这种表单的效果是内部的元素向一条共同的中线靠拢 -->
+					<!-- 当然这不是全自动的，还需要手动加上一些类 -->
 					<form class="form-horizontal" role="form">
 						<div class="form-group">
+							<!-- control-label类：如果这个类在 form-horizontal 类里面，就是文字加粗+右对齐效果 -->
+							<!-- 注意这里加了 col-sm-2，form-horizontal 并不负责调整位置，因此位置要手动调整 -->
 							<label for="firstname" class="col-sm-2 control-label">名字</label>
 							<div class="col-sm-10">
 								<input type="text" class="form-control" id="firstname" placeholder="请输入名字">
